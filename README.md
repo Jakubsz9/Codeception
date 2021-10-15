@@ -1,2 +1,1 @@
-# sample_project
-sample test project
+# sample test project
