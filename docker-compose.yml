@@ -1,0 +1,24 @@
+version: '3.5'
+
+networks:
+  proxy:
+    external: true
+
+services:
+  php:
+    build:
+      context: docker/php
+    container_name: codeception_visual
+    volumes:
+      - .:/var/www/html:cached
+    environment:
+      - APP_ENV=test
+    networks:
+      - proxy
+
+  codeception_chrome:
+    container_name: codeception_chrome
+    shm_size: '2gb'
+    image: selenium/standalone-chrome:3.141.59-xenon
+    networks:
+      - proxy

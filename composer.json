@@ -1,0 +1,22 @@
+{
+    "name": "grzegab/codeception_base",
+    "description": "Sample project to create base for future visual test",
+    "type": "project",
+    "require": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-asserts": "dev-master",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-webdriver": "dev-master"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Szymankiewicz",
+            "email": "jakub.szymankiewicz@icloud.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
